@@ -1,0 +1,136 @@
+/* Convert px to rem */
+@mixin font-size($sizeValue: 18 ){
+    font-size: $sizeValue + px;
+    font-size: (0.0625 * $sizeValue) + rem;
+}
+@mixin line-height($heightValue: 30 ){
+    line-height: $heightValue + px;
+    line-height: (0.0625 * $heightValue) + rem;
+}
+@mixin fontSize($sizeValue: 18, $heightValue: 30) {
+    @include font-size($sizeValue);
+    @include line-height($heightValue);
+}
+
+@mixin box-sizing($args...) {
+    -webkit-box-sizing: $args;
+    -moz-box-sizing: $args;
+    box-sizing: $args;
+}
+
+@mixin animation($args...) {
+    -webkit-animation: $args;
+    -moz-animation: $args;
+    animation: $args;
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    transition: $args;
+}
+
+@mixin transform($args...) {
+    -webkit-transform: $args;
+    -moz-transform: $args;
+    transform: $args;
+}
+
+@mixin box-shadow($args...) {
+    -webkit-box-shadow: $args;
+    -moz-box-shadow: $args;
+    box-shadow: $args;
+}
+
+@mixin display-flex($args...) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex($args...) {
+    -webkit-box-flex: $args;
+    -moz-box-flex:  $args;
+    -webkit-flex:  $args;
+    -ms-flex:  $args;
+    flex:  $args;
+}
+
+@mixin flex-direction($args...) {
+    -webkit-flex-direction: $args;
+    -moz-flex-direction: $args;
+    flex-direction: $args;
+}
+
+@mixin flex-basis($args...) {
+    -webkit-flex-basis: $args;
+    -moz-flex-basis: $args;
+    flex-basis: $args;
+}
+
+@mixin flex-wrap($args...) {
+    -webkit-flex-wrap: $args;
+    -moz-flex-wrap: $args;
+    flex-wrap: $args;
+}
+
+@mixin justify-content($args...) {
+    -webkit-justify-content: $args;
+    -moz-justify-content: $args;
+    justify-content: $args;
+}
+
+@mixin align-items($args...) {
+    -webkit-align-items: $args;
+    -moz-align-items: $args;
+    align-items: $args;
+}
+
+@mixin align-content($args...) {
+    -webkit-align-content: $args;
+    -moz-align-content: $args;
+    align-content: $args;
+}
+
+@mixin align-self($args...) {
+    -webkit-align-self: $args;
+    -moz-align-self: $args;
+    align-self: $args;
+}
+
+@mixin border-radius($args...) {
+    -webkit-border-radius: $args;
+    -moz-border-radius: $args;
+    border-radius: $args;
+}
+
+@mixin background-image($args...) {
+    -webkit-background-image: $args;
+    -moz-background-image: $args;
+    background-image: $args;
+}
+
+/* Breakpoints for media queries */
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+@mixin for-phone-tablet-portrait {
+    @media (max-width: 899px) { @content; }
+}
+@mixin for-phone-tablet {
+    @media (max-width: 1199px) { @content; }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+}

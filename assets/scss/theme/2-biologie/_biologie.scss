@@ -1,0 +1,26 @@
+#biologie {
+    background-color: $color-greyish;
+    padding-top: 33px;
+    padding-bottom: 36px;
+    .biologie__wrapper {
+        @include display-flex;
+        @include flex-direction(row-reverse);
+        @include align-items(center);
+        @include justify-content(space-between);
+    }
+    .biologie__img {
+        width: 100%;
+        max-width: 360px;
+    }
+    .biologie__logo {
+        margin-bottom: 30px;
+    }
+    .biologie__title {
+        margin-bottom: 15px;
+    }
+    .biologie__content{
+        max-width: 590px;
+        padding: 0 35px;
+    }
+    
+}

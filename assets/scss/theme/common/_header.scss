@@ -1,0 +1,47 @@
+#home_page {
+	#header {
+		height: 763px;
+		position: relative;
+        top: 120px;
+		@include display-flex;
+		@include align-items(center);
+		@include background-image(url("../img/home/header/eliott_home_header.jpg"));
+		background-position: 85%;
+		background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 70px;
+		@media (min-width: 1400px) { 
+			background-position: 100%;
+		}
+        overflow: auto;
+	}
+	.header__wrapper {
+		padding-top: 90px;
+		@include display-flex;
+		@include flex-direction(column);
+		@include align-items(flex-start);
+		position: relative;
+		z-index: 1;
+	}
+	.header__title {
+		margin-bottom: 100px;
+		max-width: 870px;
+		font-family: 'Montserrat-Black';
+		@include fontSize(52, 52);
+        color: $color-white;
+	}
+	.header__subtitle {
+        font-family: 'Montserrat-Medium';
+        @include fontSize(20, 30);
+		margin-bottom: 100px;
+		max-width: 530px;
+        color: $color-white;
+	}
+//	.header__CTA {
+//		@include display-flex;
+//		@include justify-content(flex-start);
+//		.btn + .btn {
+//			margin-left: 25px;
+//		}
+//	}
+}

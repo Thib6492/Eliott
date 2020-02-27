@@ -1,0 +1,87 @@
+#programme {
+	padding-top: 70px;
+    margin-bottom: 55px;
+	.section-intro {
+		margin-bottom: 50px;
+		max-width: 840px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.programme__wrapper {
+		@include display-flex;
+		@include justify-content(center);
+		@include align-items(center);
+		@include flex-wrap(wrap);
+	}
+	.programme__item {
+		//height: 780px;
+		margin: 15px;
+		//@include flex(0 0 360px);
+		width: 360px;
+		@include display-flex;
+		@include flex-direction(column);
+		position: relative;
+		overflow: hidden;
+		border: 1px solid rgba(155, 155, 155, 0.3);
+		@include border-radius(4px);
+	}
+	.programme__img {
+		width: 360px;
+		height: 260px;
+	}
+	.programme__content {
+		padding: 26px 29px 32px;
+        height: 522px;
+		@include display-flex;
+		@include flex-direction(column);
+		@include justify-content(center);
+		@include align-items(center);
+		border-top: 1px solid rgba(155,155,155,0.3);
+		@include border-radius(0 0 4px 4px);
+	}
+	.programme__title {
+		margin-bottom: 18px;
+	}
+	.programme__description {
+        //margin-bottom: 28px;
+	}
+    .programme__btn {
+        margin-top: auto;
+    }
+    .programme__img {
+        width: 360px;
+        height: 260px;
+    }
+}
+
+#programme-digital {
+    background-color: $color-greyish;
+    background-image: url(../img/home/programme/tick.png);
+    background-size: 713px 661px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 86px;
+    padding-bottom: 32px;
+    .programme-digital__wrapper {
+        @include display-flex;
+        @include flex-direction(column);
+    }
+    .programme-digital__item {
+        @include display-flex;
+        margin-bottom: 0;
+        &:nth-child(odd) {
+            @include flex-direction(row-reverse);
+            margin-bottom: 60px;
+        }
+    }
+    .programme-digital__btn {
+        margin-top: 15px;
+    }
+    .programme-digital__content{
+        padding: 0 20px;
+    }
+    .programme-digital__img {
+        max-width: 578px;
+        //height: 386px;
+    }
+}

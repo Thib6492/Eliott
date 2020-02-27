@@ -1,0 +1,117 @@
+//@import "compass/reset";
+
+$color-black: #0F1E34;
+$color-grey: #848991;
+$color-white: #FFFFFF;
+$color-blue: #76D3CA;
+$color-greyish: rgba(#D8D8D8,0.15);
+
+* {
+	@include box-sizing(border-box);
+}
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	@include animation(fade-in .2s ease-in);
+}
+section {
+	position: relative;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+//.anchor::before {
+//    display: block;
+//    content: "";
+//    margin-top: -120px;
+//    height: 120px;
+//    visibility: hidden;
+//    pointer-events: none;
+//}
+.anchor {
+//    display:block;
+//    padding-top:120px;
+//    margin-top:-120px;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-family: 'Montserrat-Regular';
+	@include fontSize(18, 30);
+    color: $color-grey;
+}
+h3 {
+	font-family:'Montserrat-SemiBold';
+	@include fontSize(25, 34);
+}
+.text-center {
+	text-align: center;
+}
+.bg--grey {
+    background-color: $color-greyish;
+}
+.bg--green {
+    background-color: $color-blue;
+}
+.mobile {
+	display: none;
+}
+.desktop {
+	display: block;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	@include for-desktop-up {
+		width: 1170px;
+	}
+	@include for-big-desktop-up {
+		width: 1400px;
+	}
+}
+.clearfix {
+    overflow: auto;
+}
+.section-title {
+	margin-bottom: 15px;
+	font-family:'Montserrat-Regular';
+	@include fontSize(52,63);
+	color: $color-black;
+	&.section-title--small {
+        font-family: 'Montserrat-SemiBold';
+		@include fontSize(25, 34);
+		color: #000000;
+	}
+}
+.section-intro {
+	margin-bottom: 60px;
+	@include fontSize(20, 30);
+	letter-spacing: -0.18px;
+	color: #646464;
+}
+.wrapper--grey {
+    background-color: $color-greyish;
+}
+#eliottIframe {
+    width: 100%;
+    height: 100%;
+}
+#header--sport, #header--biologie, #header--application {
+	.section-intro {
+		max-width: 580px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 70px;
+	}
+	.section-background img {
+		width: 100%;
+		height: auto;
+	}
+	.container {
+		margin-top: -225px;
+	}
+}
+@keyframes fade-in {
+	from {opacity: 0;} to {opacity: 1;}
+}

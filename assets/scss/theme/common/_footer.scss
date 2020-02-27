@@ -1,0 +1,17 @@
+#footer {
+	padding-top: 44px;
+	padding-bottom: 25px;
+    text-align: right;
+    .footer__mentions {
+        display: block;
+        font-family: 'Montserrat-SemiBold';
+        @include fontSize(16, 19);
+        color: $color-black;
+        margin-bottom: 35px;
+    }
+	.footer__copyright {
+		font-family: 'Montserrat-Regular';
+		@include fontSize(14, 24);
+		color: $color-grey;
+	}
+}

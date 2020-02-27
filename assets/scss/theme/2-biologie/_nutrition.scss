@@ -1,0 +1,26 @@
+#nutrition {
+    //background-color: $color-greyish;
+    padding-top: 96px;
+    padding-bottom: 58px;
+    .nutrition__wrapper {
+        @include display-flex;
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(space-between);
+    }
+    .nutrition__img {
+        width: 100%;
+        max-width: 360px;
+    }
+    .nutrition__logo {
+        margin-bottom: 30px;
+    }
+    .nutrition__title {
+        margin-bottom: 15px;
+    }
+    .nutrition__content{
+        max-width: 590px;
+        padding: 0 35px;
+    }
+    
+}

@@ -1,0 +1,14 @@
+#parcours {
+    .parcours__wrapper {
+        padding-top: 50px;
+    }
+    .parcours__wrapper__title {
+        @include fontSize(36, 44);
+        color: $color-black;
+    }
+    .parcours__wrapper__video {
+        padding-top: 28px;
+        padding-bottom: 55px;
+        height: 660px;
+    }
+}

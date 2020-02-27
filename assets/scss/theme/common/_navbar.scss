@@ -1,0 +1,124 @@
+#navbar {
+	width: 100%;
+    height: 120px;
+	//position: relative;
+	position: fixed;
+	top: 0;
+	background-color: #FFFFFF;
+	z-index: 999;
+    padding: 25px 0;
+	&.hide {
+		@include transform(translateY(-120px));
+		@include animation(hide-nav .4s ease);
+	}
+	&.show {
+		@include transform(translateY(0));
+		@include animation(show-nav .4s ease);
+	}
+	&.is-fixed {
+		position: fixed;
+		top: 0;
+		//background-color: #FFFFFF;
+		@include animation(show-nav .4s ease);
+		//z-index: 999;
+        @include box-shadow(0 0 10px rgba(0,0,0,0.2));
+		.navbar__wrapper {
+			//height: 85px;
+			//@include align-items(center);
+            //@include justify-content(flex-start);
+		}
+		.navbar__menu {
+			//padding: 0;
+			//@include align-items(center);
+		}
+//		.navbar__brand .navbar__logo {
+//			display: none;
+//		}
+//		.navbar__brand .navbar__logo_fixed {
+//			display: block;
+//		}
+	}
+    .navbar__wrapper {
+        position: relative;
+        @include display-flex;
+//        @include justify-content(space-between);
+        @include justify-content(flex-start);
+    }
+    .navbar__brand {
+        margin-right: 125px;
+        .navbar__logo {
+            width: 169px;
+            height: 74px;
+        }
+        .navbar__logo_fixed {
+            display: none;
+        }
+    }
+    .navbar__connexion {
+        vertical-align: top;
+        margin-left: 8px;
+    }
+    .navbar__connexion__img {
+        height: 30px;
+        width: 30px;
+    }
+    .navbar__hamburger {
+        display: none;
+    }
+    .navbar__menu {
+        padding-top: 27px;
+        @include display-flex;
+        @include align-items(flex-start);
+        .navbar__item {
+            &:not(:first-child) {
+                margin-left: 60px;
+            }
+            &:last-child {
+                margin-left: 363px;
+            }
+        }
+    }
+    .navbar__link {
+        font-family: 'Montserrat-Black';
+        @include fontSize(16);
+        color: $color-black;
+        &__img {
+            width: 30px;
+            heright: 30px;
+        }
+    }
+}
+
+/* Animations */
+@keyframes hide-nav {
+	from {
+		@include transform(translateY(0));
+	}
+	to {
+		@include transform(translateY(-120px));
+	}
+}
+@keyframes show-nav {
+	from {
+		@include transform(translateY(-120px));
+	}
+	to {
+		@include transform(translateY(0));
+	}
+}
+@keyframes openMenu {
+	from {
+		@include transform(translateX(200vw));
+	}
+	to {
+		@include transform(translateX(0));
+	}
+}
+@keyframes closeMenu {
+    from {
+        @include transform(translateX(0));
+    }
+    to {
+        @include transform(translateX(200vw));
+    }
+}

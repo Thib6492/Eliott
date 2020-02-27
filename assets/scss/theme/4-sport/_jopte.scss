@@ -1,0 +1,40 @@
+#jopte {
+    background-color: $color-greyish;
+    padding-top: 67px;
+    padding-bottom: 100px;
+    .jopte__wrapper {
+        @include display-flex;
+        @include justify-content(space-around);
+    }
+    .section-title.section-title--small {
+        //font-family: 'Avenir LT W01_35 Light1475496';
+    }
+    .jopte__item {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        @include display-flex;
+        @include flex-direction(column);
+        //@include justify-content(center);
+        max-width: 520px;
+        &:last-child {
+            .jopte__catchphrase {
+                margin-bottom: 47px;
+            }
+        }
+    }
+    .jopte__text {
+        @include fontSize(20, 30);
+    }
+    .jopte__catchphrase {
+        margin: 20px auto;
+        font-family: 'Montserrat-SemiBold';
+        @include fontSize(18,22);
+        @include fontSize(18,22);
+        color: $color-blue;
+    }
+    .jopte__img {
+        max-width: 150px;
+        align-self: center;
+    }
+}

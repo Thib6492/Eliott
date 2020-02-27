@@ -1,0 +1,50 @@
+#gymlib {
+    //background-color: $color-greyish;
+    background-image: url(../img/home/programme/tick.png);
+    background-size: 713px 661px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 24px;
+    margin-bottom: 55px;
+    .section-title {
+        margin-bottom: 60px;
+    }
+    .gymlib__wrapper {
+        @include display-flex;
+        @include flex-direction(column);
+    }
+    .gymlib__item {
+        @include display-flex;
+        margin-bottom: 0;
+        margin-bottom: 55px;
+        &:nth-child(even) {
+            @include flex-direction(row-reverse);
+            margin-bottom: 75px;
+        }
+        &>* {
+            width: 590px;
+        }
+    }
+    .gymlib__btn {
+        margin-top: 15px;
+    }
+    .gymlib__content{
+        padding: 0 20px;
+        @include align-self(center);
+    }
+    .gymlib__img {
+        width: 500px;
+        //height: 386px;
+    }
+    
+    .gymlib__banner {
+        background-color: $color-black;
+        padding-top: 30px;
+        padding-bottom: 32px;
+    }
+    .gymlib__banner__title {
+        font-family: 'Montserrat-Bold';
+        @include fontSize(20,24);
+        color: $color-blue;
+    }
+}

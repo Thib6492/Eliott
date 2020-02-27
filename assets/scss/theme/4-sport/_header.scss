@@ -1,0 +1,12 @@
+#header--sport {
+    //padding-bottom: 90px;
+    position: initial;
+    margin-top: 120px;
+    .section-title {
+        font-family: 'Montserrat-Black';
+    }
+    .section-intro {
+        @include fontSize(18, 30);
+        color: $color-grey;
+    }
+}

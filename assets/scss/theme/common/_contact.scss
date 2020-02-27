@@ -1,0 +1,51 @@
+#contact-us {
+	.contact__wrapper {
+		padding: 12px 0;
+		@include display-flex;
+		//@include justify-content(center);
+		//@include align-items(center);
+	}
+	.contact__item {
+		&:not(:first-child) {
+			height: 83px;
+			width: 276px;
+			@include display-flex;
+			@include justify-content(space-evenly);
+            @include align-items(center);
+			@include border-radius(4px);
+			border: 1px solid #fff;
+		}
+		&:nth-child(2) {
+			margin-right: 35px;
+            margin-left: auto;
+            width: 317px;
+		}
+		span {
+			//margin-top: 0px;
+			font-family: 'Montserrat-Black';
+			color: $color-white;
+		}
+	}
+	.contact__title {
+        font-family:'Montserrat-Black';
+		@include fontSize(36, 44);
+		color: $color-white;
+	}
+	.contact__subtitle {
+		max-width: 423px;
+		@include fontSize(16, 24);
+		color: $color-white;
+	}
+	.icon {
+        &.email {
+            width: 48px;
+            height: 35px;
+        }
+		&.tel {
+			width: 32px;
+			height: 37px;
+		}
+		
+		
+	}
+}

@@ -1,0 +1,465 @@
+//max-width: 1199px
+@include for-phone-tablet {
+	.desktop {
+		display: none;
+	}
+	.container {
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+	#navbar {
+		.navbar__wrapper {
+            @include justify-content(space-between);
+		}
+		.navbar__brand .navbar__logo {
+			//height: 80px;
+		}
+		.navbar__menu {
+			width: 100vw;
+			height: calc(100vh - 120px);
+			padding: 100px 0;
+			margin-left: -35px;
+			position: absolute;
+			top: 95px;
+			overflow: hidden;
+			display: none;
+			border-top: 1px solid rgba(0, 0, 0, .1);
+			background: #fff;
+			&.is-open {
+				@include display-flex;
+				@include justify-content(space-evenly);
+				@include align-items(center);
+				@include flex-direction(column);
+				@include animation(openMenu .8s);
+			}
+		}
+		.navbar__hamburger {
+			padding: 15px;
+			display: block;
+			background: transparent;
+			border: 0;
+			cursor: pointer;
+			.icon {
+				width: 32px;
+				height: 32px;
+			}
+		}
+		.navbar__menu .navbar__item:not(:first-child) {
+			margin-top: 30px;
+			margin-left: 0;
+		}
+	}
+    #header--sport, #header--biologie, #header--application {
+        margin-top: 100px;
+        .container {
+            margin-top: -155px;
+        }
+        .section-intro {
+            max-width: 700px;
+        }
+        .container {
+            //margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    #contact-us {
+        .contact__wrapper {
+            padding-top: 20px;
+            @include justify-content(center);
+            @include flex-wrap(wrap);
+        }
+        .contact__title {
+            margin-bottom: 10px;
+        }
+        .contact__item {
+            &:nth-child(1) {
+                margin: 0;
+                margin-bottom: 20px;
+                @include flex(0 0 100%);
+                text-align: center;
+            }
+            &:nth-child(2), &:nth-child(3) {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            &:nth-child(3) {
+                margin-left: 20px;
+            }
+        }
+        .contact__subtitle {
+            margin: 0 auto;
+        }
+    }
+    //    #contact {
+    //        .contact__list {
+    //            @include flex-direction(column);
+    //            @include align-items(center);
+    //        }
+    //        .contact__item {
+    //            &:not(:last-child) {
+    //                margin-bottom: 40px;
+    //            }
+    //        }
+    //    }
+    #footer {
+        .navbar__wrapper {
+            @include flex-direction(column);
+            @include align-items(center);
+        }
+        .navbar__menu {
+            display: none;
+        }
+        .footer__copyright {
+            margin-top: 15px;
+            position: relative;
+        }
+    }
+	#home_page {
+		#header {
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, .1);
+			}
+			.header__wrapper {
+				padding-top: 0;
+				height: auto;
+				@include justify-content(center);
+			}
+		}
+	}
+    #parcours, #philosophie {
+        .parcours__wrapper__video, .philosophie__wrapper__video {
+            height: 460px;
+        }
+    }
+    #programme-digital {
+        background-size: 350px 325px;
+        padding-top: 86px;
+        padding-bottom: 32px;
+        .programme-digital__wrapper {
+            //@include display-flex;
+            //@include flex-direction(column);
+        }
+        .programme-digital__item {
+            &:nth-child(odd) {
+                @include flex-direction(column);
+                margin-bottom: 60px;
+            }
+            &:nth-child(even) {
+                @include flex-direction(column);
+            }
+        }
+        .programme-digital__illustration {
+            margin-bottom: 20px;
+        }
+        .programme-digital__img {
+            width: 100%;
+        }
+    }
+    #jopte {
+        .jopte__wrapper {
+            @include flex-direction(column);
+            //@include justify-content(center);
+        }
+        .jopte__item {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            &:first-child {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    #fizix, #gymlib {
+        .fizix, .gymlib {
+            &__item {
+                @include flex-direction(column);
+                &:nth-child(even) {
+                    @include flex-direction(column);
+                }
+                &>* {
+                    //width: 730px;
+                    width: auto;
+                    max-width: 730px;
+                }
+            }
+            &__illustration {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+            &__img {
+                width: 100%;
+            }
+            &__banner__wrapper {
+                @include justify-content(space-around);
+            }
+            &__banner__item {
+                width: 250px;
+            }
+        }
+    }
+    #application {
+        .application__wrapper {
+            @include flex-direction(column);
+            @include justify-content(center);
+        }
+        .application__item {
+            width: 70%;
+            //@include display-flex;
+            //@include flex-direction(column);
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px !important;
+        }
+        .application__text {
+            width: auto;
+        }
+        .application__list {
+            width: auto;
+        }
+    }
+}
+
+//max-width: 899px
+@include for-phone-tablet-portrait {
+    #header--sport, #header--biologie, #header--application {
+        .container {
+            margin-top: -95px;
+        }
+    }
+    #programme {
+        .programme__content {
+            height: auto;
+        }
+        .programme__description {
+            margin-bottom: 28px;
+        }
+    }
+    #parcours, #philosophie {
+        .parcours__wrapper__video, .philosophie__wrapper__video {
+            height: 360px;
+        }
+    }
+    #application {
+        .application__wrapper {
+            //@include flex-;
+        }
+        .application__item {
+            width: 100%;
+        }
+        .application__img {
+            //float: none;
+        }
+    }
+    #biologie, #nutrition {
+        .biologie, .nutrition {
+            &__wrapper {
+                @include flex-direction(column);
+                @include justify-content(center);
+            }
+            &__content {
+                margin-top: 30px;
+            }
+        }
+    }
+    #fizix, #gymlib {
+        .fizix, .gymlib {
+            &__illustration {
+                //width: auto;
+            }
+            &__item {
+                &>* {
+                    //width: 530px;
+                }
+            }
+            &__banner__wrapper {
+                @include flex-direction(column);
+            }
+            &__banner__item {
+                width: auto;
+                &:not(:first-child) {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+//max-width: 599px
+@include for-phone-only {
+    .mobile {
+        display: block;
+    }
+    .section-title {
+        @include fontSize(42,53);
+    }
+    #header--sport, #header--biologie, #header--application {
+        .container {
+            margin-top: -55px;
+        }
+    }
+    #approach, #customers, #multilanguage {
+        .section-title,
+        .section-intro {
+            max-width: 330px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    #fizix, #gymlib {
+        .fizix, .gymlib {
+            &__item {
+                &>* {
+                    //width: 280px;
+                }
+            }
+        }
+    }
+    #navbar {
+        .navbar__brand {
+            margin-right: 0;
+            .navbar__logo {
+                width: auto;
+                height: 61px;
+            }
+        }
+    }
+    #home_page {
+        #header {
+            background-image: url(../img/home/header/eliott_home_header_mobile.jpg);
+            background-position: 80%;
+            .header__title, .header__subtitle {
+                max-width: 400px;
+            }
+            .header__subtitle {
+                margin-bottom: 50px;
+            }
+            .header__wrapper {
+                //padding-bottom: 100px;
+            }
+            .header__CTA {
+                @include flex-direction(column);
+                .btn + .btn {
+                    margin-left: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    #home-links, #biologie-links, #sport-links, #application-links {
+        .home-links__wrapper, .biologie-links__wrapper, .sport-links__wrapper, .application-links__wrapper {
+            @include flex-direction(column);
+        }
+        .home-links__btn, .biologie-links__btn, .sport-links__btn, .application-links__btn {
+            &:nth-child(odd) {
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    #header--sport, #header--biologie, #header--application {
+        .section-intro {
+            max-width: 320px;
+        }
+    }
+    #application {
+        //text-align: center;
+        .application__item__header {
+            @include justify-content(center);
+        }
+        .application__item__content {
+            text-align: center;
+        }
+        .application__text {
+            text-align: left;
+        }
+        .application__img {
+            float: none;
+            margin-right: 0;
+        }
+        .application__list {
+            text-align: left;
+            margin-left: 21px;
+        }
+    }
+    #contact-us {
+        .contact__item {
+            span{
+                //width: 55%;
+            }
+        }
+    }
+}
+
+@media (max-width: 683px) {
+    .container {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #navbar {
+        .navbar__menu {
+            margin-left: -15px;
+        }
+    }
+    #home_page {
+        .header__title {
+            @include fontSize(40,48);
+        }
+    }
+    #contact-us {
+        .contact__item:nth-child(3) {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    #navbar {
+        .navbar__wrapper {
+            @include justify-content(space-between);
+        }
+        .navbar__brand .navbar__logo {
+            //height: 80px;
+        }
+        .navbar__menu {
+            height: calc(100vh - 190px);
+        }
+    }
+    #programme {
+        .programme__item {
+            width: 290px;
+        }
+    }
+//    #programme-digital {
+//        .programme-digital__text {
+//            text-align: left;
+//        }
+//    }
+    #contact-us {
+        .contact__item:nth-child(2) {
+            span {
+                width: 50%;
+            }
+        }
+    }
+}
+
+//min-width: 900px
+@include for-tablet-landscape-up {
+    #home_page {
+        .header__wrapper {
+            padding: 0;
+        }
+    }
+}
+
+//min-width: 600px
+@include for-tablet-portrait-up {
+
+}
