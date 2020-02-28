@@ -7,12 +7,12 @@ require_once('inc/nav.php');
 ?>
 <!-- SECTION HEADER -->
 <header id="header">
-	<div class="container">
-		<div class="header__wrapper">
+  <div class="container">
+    <div class="header__wrapper">
             <h1 class="header__title">Eliott, votre programme<br>bien-être &amp; santé personnalisé</h1>
             <p class="header__subtitle">A partir de l’analyse biologique, nous déterminons avec précision votre profil et développons pour vous un programme sur-mesure, (sport, nutrition), accompagné par des experts de la santé et du bien-être.</p>
-		</div>
-	</div>
+    </div>
+  </div>
 </header>
 <!-- SECTION PHILOSOPHIE -->
 <section id="philosophie" class="anchor">
@@ -112,10 +112,11 @@ require_once('inc/nav.php');
     </div>
 </section>
 <?php require_once('inc/contact.php'); ?>
-
+<?php require_once('inc/form.php'); ?>
 <?php require_once('inc/footer.php'); ?>
-<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="assets/js/navbar.min.js"></script>
+<script src="assets/js/form.min.js"></script>
+<!--<script src="https://player.vimeo.com/api/player.js"></script>-->
 <!-- <script src="assets/js/modal.min.js"></script> -->
-<script src="assets/js/navbar.js"></script>
 </body>
 </html>

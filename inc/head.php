@@ -8,7 +8,7 @@
 	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="assets/css/fonts.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
-	<link rel="icon" href="assets/img/logos/betterise_favicon.ico" />
+	<link rel="icon" href="assets/img/favicon.ico" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <!--
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129514396-1"></script>

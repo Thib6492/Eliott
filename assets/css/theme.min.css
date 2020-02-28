@@ -108,6 +108,8 @@ h3 {
   @media (min-width: 1800px) {
     .container {
       width: 1400px; } }
+  .container--form {
+    width: 761px; }
 
 .clearfix {
   overflow: auto; }
@@ -254,7 +256,7 @@ h3 {
     color: #0F1E34; }
     #navbar .navbar__link__img {
       width: 30px;
-      heright: 30px; }
+      height: 30px; }
 
 /* Animations */
 @-webkit-keyframes hide-nav {
@@ -497,6 +499,9 @@ h3 {
   line-height: 1.5rem;
   color: #FFFFFF; }
 
+#contact-us #contact__button {
+  cursor: pointer; }
+
 #contact-us .icon.email {
   width: 48px;
   height: 35px; }
@@ -504,6 +509,104 @@ h3 {
 #contact-us .icon.tel {
   width: 32px;
   height: 37px; }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#form {
+  display: none;
+  margin: 70px auto 0 auto; }
+  #form.is-open {
+    display: block; }
+  #form label {
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    color: #848991;
+    margin-bottom: 10px; }
+  #form input {
+    border: 2px solid #D1D5D8;
+    background-color: rgba(209, 213, 216, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height: 80px;
+    padding: 25px 20px;
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    line-height: 1.875rem; }
+    #form input:focus {
+      border-color: #76D3CA; }
+    #form input:invalid {
+      border-color: #F8AC78; }
+    #form input:required {
+      border-color: #D1D5D8; }
+  #form .form__wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  #form .form__item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 100%; }
+    #form .form__item--postCode {
+      width: 21%; }
+    #form .form__item--city {
+      width: 75%; }
+    #form .form__item--lastName, #form .form__item--firstName, #form .form__item--email, #form .form__item--tel {
+      width: 48%; }
+    #form .form__item--firstName, #form .form__item--tel, #form .form__item--city {
+      margin-left: 4%; }
+  #form .form__item--submit button {
+    max-width: 421px;
+    margin: 0 auto;
+    background-color: #76D3CA;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Regular';
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    text-transform: uppercase;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 25px 20px; }
+  #form .form__obli {
+    margin-top: -20px;
+    margin-bottom: 40px; }
 
 #footer {
   padding-top: 44px;
@@ -1207,9 +1310,45 @@ h3 {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
       -webkit-animation: openMenu 0.8s;
       -moz-animation: openMenu 0.8s;
       animation: openMenu 0.8s; }
+    #navbar .navbar__menu.is-closed {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-evenly;
+      -moz-justify-content: space-evenly;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -webkit-transform: translateX(200vw);
+      -moz-transform: translateX(200vw);
+      -ms-transform: translateX(200vw);
+      transform: translateX(200vw);
+      -webkit-animation: closeMenu 0.8s;
+      -moz-animation: closeMenu 0.8s;
+      animation: closeMenu 0.8s; }
   #navbar .navbar__hamburger {
     padding: 15px;
     display: block;
@@ -1418,6 +1557,31 @@ h3 {
     #fizix .fizix__banner__item:not(:first-child), #fizix .gymlib__banner__item:not(:first-child), #gymlib .fizix__banner__item:not(:first-child), #gymlib .gymlib__banner__item:not(:first-child) {
       margin-top: 30px; } }
 
+@media (max-width: 683px) {
+  .container {
+    width: auto;
+    padding-right: 15px;
+    padding-left: 15px; }
+  #navbar .navbar__menu {
+    margin-left: -15px; }
+  #home_page .header__title {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 48px;
+    line-height: 3rem; }
+  #form .form__wrapper {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  #form .form__item {
+    width: 100%;
+    margin-left: 0; }
+  #contact-us .contact__item:nth-child(3) {
+    margin-left: 0; } }
+
 @media (max-width: 599px) {
   .mobile {
     display: block; }
@@ -1485,21 +1649,6 @@ h3 {
   #application .application__list {
     text-align: left;
     margin-left: 21px; } }
-
-@media (max-width: 683px) {
-  .container {
-    width: auto;
-    padding-right: 15px;
-    padding-left: 15px; }
-  #navbar .navbar__menu {
-    margin-left: -15px; }
-  #home_page .header__title {
-    font-size: 40px;
-    font-size: 2.5rem;
-    line-height: 48px;
-    line-height: 3rem; }
-  #contact-us .contact__item:nth-child(3) {
-    margin-left: 0; } }
 
 @media (max-width: 350px) {
   #navbar .navbar__wrapper {
