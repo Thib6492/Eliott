@@ -15,12 +15,12 @@
 				<input name="adress" type="text" placeholder="Ex : 20 Rue du Joaillier">
 			</p>
 			<p class="form__item form__item--postCode">
-				<label for="postCode">Code postal</label>
-				<input name="postCode" type="number" placeholder="Ex : 75000">
+				<label for="postCode">Code postal *</label>
+				<input required name="postCode" type="text" placeholder="Ex : 75000">
 			</p>
 			<p class="form__item form__item--city">
-				<label for="city">Ville</label>
-				<input name="city" type="text" placeholder="Ex : Paris">
+				<label for="city">Ville *</label>
+				<input required name="city" type="text" placeholder="Ex : Paris">
 			</p>
 			<p class="form__item form__item--email">
 				<label for="email">Adresse e-mail *</label>
@@ -28,7 +28,7 @@
 			</p>
 			<p class="form__item form__item--tel">
 				<label for="tel">Téléphone</label>
-				<input name="tel" type="number" placeholder="Ex : 06 00 00 00 00">
+				<input name="tel" type="text" placeholder="Ex : 06 00 00 00 00">
 			</p>
 			<p class="form__obli">* : Champs obligatoires</p>
 			<p class="form__item form__item--submit">

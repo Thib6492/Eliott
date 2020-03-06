@@ -38,55 +38,54 @@
 //      display: block;
 //    }
   }
-    .navbar__wrapper {
-        position: relative;
-        @include display-flex;
-//        @include justify-content(space-between);
-        @include justify-content(flex-start);
-    }
-    .navbar__brand {
-        margin-right: 125px;
-        .navbar__logo {
-            width: 169px;
-            height: 74px;
-        }
-        .navbar__logo_fixed {
-            display: none;
-        }
-    }
-    .navbar__connexion {
-        vertical-align: top;
-        margin-left: 8px;
-    }
-    .navbar__connexion__img {
-        height: 30px;
-        width: 30px;
-    }
-    .navbar__hamburger {
-        display: none;
-    }
-    .navbar__menu {
-        padding-top: 27px;
-        @include display-flex;
-        @include align-items(flex-start);
-        .navbar__item {
-            &:not(:first-child) {
-                margin-left: 60px;
-            }
-            &:last-child {
-                margin-left: 363px;
-            }
-        }
-    }
-    .navbar__link {
-        font-family: 'Montserrat-Black';
-        @include fontSize(16);
-        color: $color-black;
-        &__img {
-            width: 30px;
-          height: 30px;
-        }
-    }
+	.navbar__wrapper {
+			position: relative;
+			@include display-flex;
+			@include justify-content(flex-start);
+	}
+	.navbar__brand {
+			margin-right: 125px;
+			.navbar__logo {
+					width: 169px;
+					height: 74px;
+			}
+			.navbar__logo_fixed {
+					display: none;
+			}
+	}
+	.navbar__connexion {
+			vertical-align: top;
+			margin-left: 8px;
+	}
+	.navbar__connexion__img {
+			height: 30px;
+			width: 30px;
+	}
+	.navbar__hamburger {
+			display: none;
+	}
+	.navbar__menu {
+			padding-top: 27px;
+			@include display-flex;
+			@include align-items(flex-start);
+			.navbar__item {
+					&:not(:first-child) {
+							margin-left: 60px;
+					}
+					&:last-child {
+							margin-left: 205px;
+					}
+			}
+	}
+	.navbar__link {
+			font-family: 'Montserrat-Black';
+			@include fontSize(16);
+			color: $color-black;
+			&__img {
+					width: 30px;
+				height: 30px;
+			}
+	}
 }
 
 /* Animations */

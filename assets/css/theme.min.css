@@ -146,17 +146,23 @@ h3 {
   width: 100%;
   height: 100%; }
 
-#header--sport .section-intro, #header--biologie .section-intro, #header--application .section-intro {
+#header--sport .section-intro,
+#header--biologie .section-intro,
+#header--application .section-intro {
   max-width: 580px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px; }
 
-#header--sport .section-background img, #header--biologie .section-background img, #header--application .section-background img {
+#header--sport .section-background img,
+#header--biologie .section-background img,
+#header--application .section-background img {
   width: 100%;
   height: auto; }
 
-#header--sport .container, #header--biologie .container, #header--application .container {
+#header--sport .container,
+#header--biologie .container,
+#header--application .container {
   margin-top: -225px; }
 
 @-webkit-keyframes fade-in {
@@ -246,7 +252,7 @@ h3 {
     #navbar .navbar__menu .navbar__item:not(:first-child) {
       margin-left: 60px; }
     #navbar .navbar__menu .navbar__item:last-child {
-      margin-left: 363px; }
+      margin-left: 205px; }
   #navbar .navbar__link {
     font-family: 'Montserrat-Black';
     font-size: 16px;
@@ -443,6 +449,31 @@ h3 {
   .btn span {
     margin-left: calc(30px + 15px); }
 
+#links {
+  margin-bottom: 55px; }
+  #links .links__wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 68px;
+    padding-bottom: 68px; }
+  #links .links__btn:nth-child(odd) {
+    margin-right: 80px; }
+  #links .links__btn:hover {
+    color: #0F1E34; }
+
 #contact-us .contact__wrapper {
   padding: 12px 0;
   display: -webkit-box;
@@ -635,7 +666,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   #philosophie .section-intro {
     max-width: 998px;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-bottom: 70px; }
   #philosophie .philosophie__wrapper {
     padding-top: 70px; }
   #philosophie .philosophie__wrapper__title {
@@ -763,6 +795,11 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 0; }
     #programme-digital .programme-digital__item:nth-child(odd) {
       -webkit-flex-direction: row-reverse;
@@ -793,29 +830,6 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   padding-top: 28px;
   padding-bottom: 55px;
   height: 660px; }
-
-#home-links {
-  margin-bottom: 55px; }
-  #home-links .home-links__wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 68px;
-    padding-bottom: 68px; }
-  #home-links .home-links__btn:nth-child(odd) {
-    margin-right: 80px; }
 
 /* 2. Biologie */
 #header--biologie {
@@ -903,29 +917,6 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     max-width: 590px;
     padding: 0 35px; }
 
-#biologie-links {
-  margin-bottom: 55px; }
-  #biologie-links .biologie-links__wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 68px;
-    padding-bottom: 68px; }
-  #biologie-links .biologie-links__btn:nth-child(odd) {
-    margin-right: 80px; }
-
 /* 3. Application */
 #header--application {
   position: initial;
@@ -1006,29 +997,6 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     line-height: 1.875rem;
     color: #848991; }
 
-#application-links {
-  margin-bottom: 55px; }
-  #application-links .application-links__wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 68px;
-    padding-bottom: 68px; }
-  #application-links .application-links__btn:nth-child(odd) {
-    margin-right: 80px; }
-
 /* 4. Sport */
 #header--sport {
   position: initial;
@@ -1102,8 +1070,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   background-size: 713px 661px;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 86px;
-  padding-bottom: 32px; }
+  padding-top: 86px; }
   #fizix .section-title {
     margin-bottom: 60px; }
   #fizix .fizix__wrapper {
@@ -1124,6 +1091,15 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     margin-bottom: 0;
     margin-bottom: 55px; }
     #fizix .fizix__item:nth-child(even) {
@@ -1148,7 +1124,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   #fizix .fizix__img {
     width: 500px; }
   #fizix .fizix__banner {
-    background-color: #0F1E34;
+    background-color: rgba(216, 216, 216, 0.15);
     padding-top: 30px;
     padding-bottom: 32px; }
   #fizix .fizix__banner__wrapper {
@@ -1166,26 +1142,26 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     width: 380px; }
   #fizix .fizix__banner__title {
     font-family: 'Montserrat-Bold';
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 24px;
-    line-height: 1.5rem;
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 30px;
+    line-height: 1.875rem;
     color: #76D3CA;
     margin-bottom: 15px; }
   #fizix .fizix__banner__text {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 30px;
-    line-height: 1.875rem;
-    color: #FFFFFF; }
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    color: #0F1E34; }
 
 #gymlib {
   background-image: url(../img/home/programme/tick.png);
   background-size: 713px 661px;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 24px;
-  margin-bottom: 55px; }
+  padding-top: 70px;
+  margin-bottom: 70px; }
   #gymlib .section-title {
     margin-bottom: 60px; }
   #gymlib .gymlib__wrapper {
@@ -1206,6 +1182,15 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     margin-bottom: 0;
     margin-bottom: 55px; }
     #gymlib .gymlib__item:nth-child(even) {
@@ -1214,8 +1199,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-      margin-bottom: 75px; }
+      flex-direction: row-reverse; }
     #gymlib .gymlib__item > * {
       width: 590px; }
   #gymlib .gymlib__btn {
@@ -1230,7 +1214,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   #gymlib .gymlib__img {
     width: 500px; }
   #gymlib .gymlib__banner {
-    background-color: #0F1E34;
+    background-color: rgba(216, 216, 216, 0.15);
     padding-top: 30px;
     padding-bottom: 32px; }
   #gymlib .gymlib__banner__title {
@@ -1239,32 +1223,41 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     font-size: 1.25rem;
     line-height: 24px;
     line-height: 1.5rem;
-    color: #76D3CA; }
+    color: #0F1E34; }
 
-#sport-links {
-  margin-bottom: 55px; }
-  #sport-links .sport-links__wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+/* Mobile */
+@media (min-width: 1800px) {
+  #navbar .navbar__menu .navbar__item:last-child {
+    margin-left: 435px; }
+  #programme-digital .programme-digital__item {
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  #programme-digital .programme-digital__content {
+    width: 592px; }
+  #biologie .biologie__content,
+  #biologie .nutrition__content,
+  #nutrition .biologie__content,
+  #nutrition .nutrition__content {
+    width: 590px; } }
+
+@media (min-width: 1200px) {
+  #biologie .biologie__wrapper,
+  #biologie .nutrition__wrapper,
+  #nutrition .biologie__wrapper,
+  #nutrition .nutrition__wrapper {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 68px;
-    padding-bottom: 68px; }
-  #sport-links .sport-links__btn:nth-child(odd) {
-    margin-right: 80px; }
+    justify-content: center; }
+  #biologie .biologie__illustration,
+  #biologie .nutrition__illustration,
+  #nutrition .biologie__illustration,
+  #nutrition .nutrition__illustration {
+    width: 610px; } }
 
-/* Mobile */
 @media (max-width: 1199px) {
   .desktop {
     display: none; }
@@ -1361,13 +1354,21 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   #navbar .navbar__menu .navbar__item:not(:first-child) {
     margin-top: 30px;
     margin-left: 0; }
-  #header--sport, #header--biologie, #header--application {
+  #header--sport,
+  #header--biologie,
+  #header--application {
     margin-top: 100px; }
-    #header--sport .container, #header--biologie .container, #header--application .container {
+    #header--sport .container,
+    #header--biologie .container,
+    #header--application .container {
       margin-top: -155px; }
-    #header--sport .section-intro, #header--biologie .section-intro, #header--application .section-intro {
+    #header--sport .section-intro,
+    #header--biologie .section-intro,
+    #header--application .section-intro {
       max-width: 700px; }
-    #header--sport .container, #header--biologie .container, #header--application .container {
+    #header--sport .container,
+    #header--biologie .container,
+    #header--application .container {
       margin-left: auto;
       margin-right: auto; }
   #contact-us .contact__wrapper {
@@ -1430,7 +1431,10 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  #parcours .parcours__wrapper__video, #parcours .philosophie__wrapper__video, #philosophie .parcours__wrapper__video, #philosophie .philosophie__wrapper__video {
+  #parcours .parcours__wrapper__video,
+  #parcours .philosophie__wrapper__video,
+  #philosophie .parcours__wrapper__video,
+  #philosophie .philosophie__wrapper__video {
     height: 460px; }
   #programme-digital {
     background-size: 350px 325px;
@@ -1468,35 +1472,56 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     margin-right: auto; }
     #jopte .jopte__item:first-child {
       margin-bottom: 50px; }
-  #fizix .fizix__item, #fizix .gymlib__item, #gymlib .fizix__item, #gymlib .gymlib__item {
+  #fizix .fizix__item,
+  #fizix .gymlib__item,
+  #gymlib .fizix__item,
+  #gymlib .gymlib__item {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    #fizix .fizix__item:nth-child(even), #fizix .gymlib__item:nth-child(even), #gymlib .fizix__item:nth-child(even), #gymlib .gymlib__item:nth-child(even) {
+    #fizix .fizix__item:nth-child(even),
+    #fizix .gymlib__item:nth-child(even),
+    #gymlib .fizix__item:nth-child(even),
+    #gymlib .gymlib__item:nth-child(even) {
       -webkit-flex-direction: column;
       -moz-flex-direction: column;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-    #fizix .fizix__item > *, #fizix .gymlib__item > *, #gymlib .fizix__item > *, #gymlib .gymlib__item > * {
+    #fizix .fizix__item > *,
+    #fizix .gymlib__item > *,
+    #gymlib .fizix__item > *,
+    #gymlib .gymlib__item > * {
       width: auto;
       max-width: 730px; }
-  #fizix .fizix__illustration, #fizix .gymlib__illustration, #gymlib .fizix__illustration, #gymlib .gymlib__illustration {
+  #fizix .fizix__illustration,
+  #fizix .gymlib__illustration,
+  #gymlib .fizix__illustration,
+  #gymlib .gymlib__illustration {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px; }
-  #fizix .fizix__img, #fizix .gymlib__img, #gymlib .fizix__img, #gymlib .gymlib__img {
+  #fizix .fizix__img,
+  #fizix .gymlib__img,
+  #gymlib .fizix__img,
+  #gymlib .gymlib__img {
     width: 100%; }
-  #fizix .fizix__banner__wrapper, #fizix .gymlib__banner__wrapper, #gymlib .fizix__banner__wrapper, #gymlib .gymlib__banner__wrapper {
+  #fizix .fizix__banner__wrapper,
+  #fizix .gymlib__banner__wrapper,
+  #gymlib .fizix__banner__wrapper,
+  #gymlib .gymlib__banner__wrapper {
     -webkit-justify-content: space-around;
     -moz-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-  #fizix .fizix__banner__item, #fizix .gymlib__banner__item, #gymlib .fizix__banner__item, #gymlib .gymlib__banner__item {
+  #fizix .fizix__banner__item,
+  #fizix .gymlib__banner__item,
+  #gymlib .fizix__banner__item,
+  #gymlib .gymlib__banner__item {
     width: 250px; }
   #application .application__wrapper {
     -webkit-flex-direction: column;
@@ -1521,17 +1546,25 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     width: auto; } }
 
 @media (max-width: 899px) {
-  #header--sport .container, #header--biologie .container, #header--application .container {
+  #header--sport .container,
+  #header--biologie .container,
+  #header--application .container {
     margin-top: -95px; }
   #programme .programme__content {
     height: auto; }
   #programme .programme__description {
     margin-bottom: 28px; }
-  #parcours .parcours__wrapper__video, #parcours .philosophie__wrapper__video, #philosophie .parcours__wrapper__video, #philosophie .philosophie__wrapper__video {
+  #parcours .parcours__wrapper__video,
+  #parcours .philosophie__wrapper__video,
+  #philosophie .parcours__wrapper__video,
+  #philosophie .philosophie__wrapper__video {
     height: 360px; }
   #application .application__item {
     width: 100%; }
-  #biologie .biologie__wrapper, #biologie .nutrition__wrapper, #nutrition .biologie__wrapper, #nutrition .nutrition__wrapper {
+  #biologie .biologie__wrapper,
+  #biologie .nutrition__wrapper,
+  #nutrition .biologie__wrapper,
+  #nutrition .nutrition__wrapper {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -webkit-box-orient: vertical;
@@ -1543,18 +1576,30 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  #biologie .biologie__content, #biologie .nutrition__content, #nutrition .biologie__content, #nutrition .nutrition__content {
+  #biologie .biologie__content,
+  #biologie .nutrition__content,
+  #nutrition .biologie__content,
+  #nutrition .nutrition__content {
     margin-top: 30px; }
-  #fizix .fizix__banner__wrapper, #fizix .gymlib__banner__wrapper, #gymlib .fizix__banner__wrapper, #gymlib .gymlib__banner__wrapper {
+  #fizix .fizix__banner__wrapper,
+  #fizix .gymlib__banner__wrapper,
+  #gymlib .fizix__banner__wrapper,
+  #gymlib .gymlib__banner__wrapper {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-  #fizix .fizix__banner__item, #fizix .gymlib__banner__item, #gymlib .fizix__banner__item, #gymlib .gymlib__banner__item {
+  #fizix .fizix__banner__item,
+  #fizix .gymlib__banner__item,
+  #gymlib .fizix__banner__item,
+  #gymlib .gymlib__banner__item {
     width: auto; }
-    #fizix .fizix__banner__item:not(:first-child), #fizix .gymlib__banner__item:not(:first-child), #gymlib .fizix__banner__item:not(:first-child), #gymlib .gymlib__banner__item:not(:first-child) {
+    #fizix .fizix__banner__item:not(:first-child),
+    #fizix .gymlib__banner__item:not(:first-child),
+    #gymlib .fizix__banner__item:not(:first-child),
+    #gymlib .gymlib__banner__item:not(:first-child) {
       margin-top: 30px; } }
 
 @media (max-width: 683px) {
@@ -1590,11 +1635,15 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     font-size: 2.625rem;
     line-height: 53px;
     line-height: 3.3125rem; }
-  #header--sport .container, #header--biologie .container, #header--application .container {
+  #header--sport .container,
+  #header--biologie .container,
+  #header--application .container {
     margin-top: -55px; }
   #approach .section-title,
-  #approach .section-intro, #customers .section-title,
-  #customers .section-intro, #multilanguage .section-title,
+  #approach .section-intro,
+  #customers .section-title,
+  #customers .section-intro,
+  #multilanguage .section-title,
   #multilanguage .section-intro {
     max-width: 330px;
     margin-right: auto;
@@ -1607,7 +1656,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   #home_page #header {
     background-image: url(../img/home/header/eliott_home_header_mobile.jpg);
     background-position: 80%; }
-    #home_page #header .header__title, #home_page #header .header__subtitle {
+    #home_page #header .header__title,
+    #home_page #header .header__subtitle {
       max-width: 400px; }
     #home_page #header .header__subtitle {
       margin-bottom: 50px; }
@@ -1621,17 +1671,49 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
       #home_page #header .header__CTA .btn + .btn {
         margin-left: 0;
         margin-top: 15px; }
-  #home-links .home-links__wrapper, #home-links .biologie-links__wrapper, #home-links .sport-links__wrapper, #home-links .application-links__wrapper, #biologie-links .home-links__wrapper, #biologie-links .biologie-links__wrapper, #biologie-links .sport-links__wrapper, #biologie-links .application-links__wrapper, #sport-links .home-links__wrapper, #sport-links .biologie-links__wrapper, #sport-links .sport-links__wrapper, #sport-links .application-links__wrapper, #application-links .home-links__wrapper, #application-links .biologie-links__wrapper, #application-links .sport-links__wrapper, #application-links .application-links__wrapper {
+  #home-links .home-links__wrapper,
+  #home-links .biologie-links__wrapper,
+  #home-links .sport-links__wrapper,
+  #home-links .application-links__wrapper,
+  #biologie-links .home-links__wrapper,
+  #biologie-links .biologie-links__wrapper,
+  #biologie-links .sport-links__wrapper,
+  #biologie-links .application-links__wrapper,
+  #sport-links .home-links__wrapper,
+  #sport-links .biologie-links__wrapper,
+  #sport-links .sport-links__wrapper,
+  #sport-links .application-links__wrapper,
+  #application-links .home-links__wrapper,
+  #application-links .biologie-links__wrapper,
+  #application-links .sport-links__wrapper,
+  #application-links .application-links__wrapper {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-  #home-links .home-links__btn:nth-child(odd), #home-links .biologie-links__btn:nth-child(odd), #home-links .sport-links__btn:nth-child(odd), #home-links .application-links__btn:nth-child(odd), #biologie-links .home-links__btn:nth-child(odd), #biologie-links .biologie-links__btn:nth-child(odd), #biologie-links .sport-links__btn:nth-child(odd), #biologie-links .application-links__btn:nth-child(odd), #sport-links .home-links__btn:nth-child(odd), #sport-links .biologie-links__btn:nth-child(odd), #sport-links .sport-links__btn:nth-child(odd), #sport-links .application-links__btn:nth-child(odd), #application-links .home-links__btn:nth-child(odd), #application-links .biologie-links__btn:nth-child(odd), #application-links .sport-links__btn:nth-child(odd), #application-links .application-links__btn:nth-child(odd) {
+  #home-links .home-links__btn:nth-child(odd),
+  #home-links .biologie-links__btn:nth-child(odd),
+  #home-links .sport-links__btn:nth-child(odd),
+  #home-links .application-links__btn:nth-child(odd),
+  #biologie-links .home-links__btn:nth-child(odd),
+  #biologie-links .biologie-links__btn:nth-child(odd),
+  #biologie-links .sport-links__btn:nth-child(odd),
+  #biologie-links .application-links__btn:nth-child(odd),
+  #sport-links .home-links__btn:nth-child(odd),
+  #sport-links .biologie-links__btn:nth-child(odd),
+  #sport-links .sport-links__btn:nth-child(odd),
+  #sport-links .application-links__btn:nth-child(odd),
+  #application-links .home-links__btn:nth-child(odd),
+  #application-links .biologie-links__btn:nth-child(odd),
+  #application-links .sport-links__btn:nth-child(odd),
+  #application-links .application-links__btn:nth-child(odd) {
     margin-right: 0px;
     margin-bottom: 20px; }
-  #header--sport .section-intro, #header--biologie .section-intro, #header--application .section-intro {
+  #header--sport .section-intro,
+  #header--biologie .section-intro,
+  #header--application .section-intro {
     max-width: 320px; }
   #application .application__item__header {
     -webkit-justify-content: center;

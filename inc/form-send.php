@@ -13,9 +13,9 @@ $email = $_POST['email'];
 $tel = $_POST['tel'];
 
 //Validate first
-if(empty($firstName)||empty($lastName)||empty($email))
+if(empty($lastName)||empty($firstName)||empty($postCode)||empty($city)||empty($email))
 {
-	echo "Veuillez vous assurer de renseigner tous les champs obligatoires (Prénom, nom et adresse e-mail).";
+	echo "Veuillez vous assurer de renseigner tous les champs obligatoires (Prénom, nom, code postal, ville et adresse e-mail).";
 	exit;
 }
 
@@ -37,7 +37,8 @@ $email_body = "Vous avez reçu une demande de contact depuis le site elio.tt. Vo
 	"Adresse e-mail : $email\n\n".
 	"Bonne journée !";
 
-$to = "david.audren@cerbahealthcare.com";
+//$to = "david.audren@cerbahealthcare.com";
+$to = "thibault@betterise.me";
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $email \r\n";
 
@@ -50,6 +51,7 @@ header('Location: ../');
 
 <script type="text/javascript">
 	alert("Votre message a bien été envoyé")
+
 </script>
 
 <?php

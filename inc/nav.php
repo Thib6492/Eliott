@@ -20,6 +20,9 @@ $connexion = "https://elio.tt/home"
 					<a href="index.php#anchor-programme" class="navbar__link">Programme</a>
 				</li>
 				<li class="navbar__item">
+					<a href="application.php" class="navbar__link">Application</a>
+				</li>
+				<li class="navbar__item">
 					<a href="<?= $connexion ?>" class="navbar__link">
 						<img class="navbar__connexion__img" src="assets/img/logos/connexion_logo.png" srcset="assets/img/logos/connexion_logo@2x.png 2x, assets/img/logos/connexion_logo@3x.png 3x" alt="Eliott">
 						<span class="navbar__connexion">Connexion</span>

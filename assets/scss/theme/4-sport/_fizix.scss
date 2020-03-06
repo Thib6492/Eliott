@@ -1,63 +1,81 @@
 #fizix {
-    //background-color: $color-greyish;
-    background-image: url(../img/home/programme/tick.png);
-    background-size: 713px 661px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 86px;
-    padding-bottom: 32px;
-    .section-title {
-        margin-bottom: 60px;
-    }
-    .fizix__wrapper {
-        @include display-flex;
-        @include flex-direction(column);
-    }
-    .fizix__item {
-        @include display-flex;
-        margin-bottom: 0;
-        margin-bottom: 55px;
-        &:nth-child(even) {
-            @include flex-direction(row-reverse);
-            margin-bottom: 75pxpx;
-        }
-        &>* {
-            width: 590px;
-        }
-    }
-    .fizix__btn {
-        margin-top: 15px;
-    }
-    .fizix__content{
-        padding: 0 20px;
-        @include align-self(center);
-    }
-    .fizix__img {
-        width: 500px;
-        //height: 386px;
-    }
-    
-    .fizix__banner {
-        background-color: $color-black;
-        padding-top: 30px;
-        padding-bottom: 32px;
-    }
-    .fizix__banner__wrapper {
-        @include display-flex;
-        @include justify-content(space-between);
-    }
-    .fizix__banner__item {
-        //@include flex(1 1 380px);
-        width: 380px;
-    }
-    .fizix__banner__title {
-        font-family: 'Montserrat-Bold';
-        @include fontSize(20,24);
-        color: $color-blue;
-        margin-bottom: 15px;
-    }
-    .fizix__banner__text {
-        @include fontSize(20,30);
-        color: $color-white;
-    }
+	background-image: url(../img/home/programme/tick.png);
+	background-size: 713px 661px;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 86px;
+	//padding-bottom: 32px;
+
+	.section-title {
+		margin-bottom: 60px;
+	}
+
+	.fizix__wrapper {
+		@include display-flex;
+		@include flex-direction(column);
+	}
+
+	.fizix__item {
+		@include display-flex;
+		@include align-items(center);
+		@include justify-content(space-around);
+		margin-bottom: 0;
+		margin-bottom: 55px;
+
+		&:nth-child(even) {
+			@include flex-direction(row-reverse);
+			margin-bottom: 75pxpx;
+		}
+
+		& > * {
+			width: 590px;
+		}
+	}
+
+	.fizix__btn {
+		margin-top: 15px;
+	}
+
+	.fizix__content {
+		padding: 0 20px;
+		@include align-self(center);
+	}
+
+	.fizix__img {
+		width: 500px;
+	}
+
+	.fizix__banner {
+		background-color: $color-greyish;
+		padding-top: 30px;
+		padding-bottom: 32px;
+		//padding-bottom: 2px;
+	}
+
+	.fizix__banner__wrapper {
+		@include display-flex;
+		@include justify-content(space-between);
+	}
+
+	.fizix__banner__item {
+		width: 380px;
+		
+		//width: 420px;
+		//padding: 20px;
+		//background-color: white;
+		//border-radius: 10px;
+		//box-shadow: 0 2px 8px 0 rgba(#000000,.1);
+	}
+
+	.fizix__banner__title {
+		font-family: 'Montserrat-Bold';
+		@include fontSize(22, 30);
+		color: $color-blue;
+		margin-bottom: 15px;
+	}
+
+	.fizix__banner__text {
+		@include fontSize(18, 24);
+		color: $color-black;
+	}
 }

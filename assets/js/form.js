@@ -7,8 +7,8 @@ const formdisplay = (function() {
 				form.classList.remove('is-open');
 			} else {
 				form.classList.add('is-open');
-				let scrollPos = window.scrollY;
-				scrollPos += 80;
+				//let scrollPos = window.scrollY;
+				//scrollPos += 80;
 			}
 		});
 })();

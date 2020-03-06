@@ -6,7 +6,7 @@
 @import "theme/common/_navbar.scss";
 @import "theme/common/_header.scss";
 @import "theme/common/_btn.scss";
-//@import "theme/common/_modal.scss";
+@import "theme/common/_links.scss";
 @import "theme/common/_contact.scss";
 @import "theme/common/_form.scss";
 @import "theme/common/_footer.scss";
@@ -15,25 +15,21 @@
 @import "theme/1-home/_philosophie.scss";
 @import "theme/1-home/_programme.scss";
 @import "theme/1-home/_parcours.scss";
-@import "theme/1-home/_home-links.scss";
 
 /* 2. Biologie */
 @import "theme/2-biologie/_header.scss";
 @import "theme/2-biologie/_biologie.scss";
 @import "theme/2-biologie/_nutrition.scss";
-@import "theme/2-biologie/_biologie-links.scss";
 
 /* 3. Application */
 @import "theme/3-application/_header.scss";
 @import "theme/3-application/_application.scss";
-@import "theme/3-application/_application-links.scss";
 
 /* 4. Sport */
 @import "theme/4-sport/_header.scss";
 @import "theme/4-sport/_jopte.scss";
 @import "theme/4-sport/_fizix.scss";
 @import "theme/4-sport/_gymlib.scss";
-@import "theme/4-sport/_sport-links.scss";
 
 /* Mobile */
 @import "theme/common/_mediaqueries.scss";
