@@ -125,8 +125,8 @@ require_once('inc/nav.php');
 </section>
 
 <?php
-$first_link = "biologie.php";
-$first_text = "Vos rendez-vous</br>biologie et nutrition";
+$first_link = "application.php";
+$first_text = "Votre</br>application";
 $second_link = "index.php#anchor-parcours";
 $second_text = "Découvrez votre</br>parcours";
 ?>
