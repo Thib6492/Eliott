@@ -72,19 +72,15 @@ require_once('inc/nav.php');
 			<div class="fizix__banner__wrapper">
 				<div class="fizix__banner__item">
 					<h3 class="fizix__banner__title">En direct par WebCam :</h3>
-					<p class="fizix__banner__text">Participez à une séance de coaching avec un coach<br>
-						qui vous motive, conseille,<br>
-						corrige en direct via WebCam.</p>
+					<p class="fizix__banner__text">Participez à une séance de coaching avec un coach qui vous motive, conseille, corrige en direct via WebCam.</p>
 				</div>
 				<div class="fizix__banner__item">
 					<h3 class="fizix__banner__title">Motivant :</h3>
-					<p class="fizix__banner__text">Chaque séance est un mini cours collectif de 3 à 9 participants,<br>
-						vous voyez uniquement votre coach.</p>
+					<p class="fizix__banner__text">Chaque séance est un mini cours collectif de 3 à 9 participants, vous voyez uniquement votre coach.</p>
 				</div>
 				<div class="fizix__banner__item">
 					<h3 class="fizix__banner__title">Sans contraintes :</h3>
-					<p class="fizix__banner__text">Vous réservez la séance qui vous plait quand vous le souhaitez :<br>
-						45 minutes de sueur le tout dans la bonne humeur.</p>
+					<p class="fizix__banner__text">Vous réservez la séance qui vous plait quand vous le souhaitez : 45 minutes de sueur le tout dans la bonne humeur.</p>
 				</div>
 			</div>
 

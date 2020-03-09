@@ -46,21 +46,21 @@
 	}
 
 	.gymlib__banner {
-		background-color: $color-greyish;
-		padding-top: 30px;
-		padding-bottom: 32px;
+		//background-color: $color-greyish;
+		//padding-top: 30px;
+		//padding-bottom: 32px;
 	}
 
 	.gymlib__banner__title {
 		font-family: 'Montserrat-Bold';
 		@include fontSize(20, 24);
 		color: $color-black;
-		
-		//max-width: 1050px;
-		//padding: 20px;
-		//background-color: white;
-		//border-radius: 10px;
-		//box-shadow: 0 2px 8px 0 rgba(#000000,.1);
-		//margin: 2px auto;
+
+		max-width: 1050px;
+		padding: 20px;
+		background-color: white;
+		border-radius: 10px;
+		box-shadow: 0 2px 8px 0 rgba(#000000, .1);
+		margin: 0 auto 6px auto;
 	}
 }
