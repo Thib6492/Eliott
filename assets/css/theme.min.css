@@ -1109,7 +1109,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
       -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
-      margin-bottom: 75pxpx; }
+      margin-bottom: 55px; }
     #fizix .fizix__item > * {
       width: 590px; }
   #fizix .fizix__btn {
@@ -1124,9 +1124,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   #fizix .fizix__img {
     width: 500px; }
   #fizix .fizix__banner {
-    background-color: rgba(216, 216, 216, 0.15);
-    padding-top: 30px;
-    padding-bottom: 32px; }
+    padding-bottom: 6px; }
   #fizix .fizix__banner__wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -1139,7 +1137,12 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     -ms-flex-pack: justify;
     justify-content: space-between; }
   #fizix .fizix__banner__item {
-    width: 380px; }
+    width: 360px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1); }
   #fizix .fizix__banner__title {
     font-family: 'Montserrat-Bold';
     font-size: 22px;
@@ -1213,22 +1216,27 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     align-self: center; }
   #gymlib .gymlib__img {
     width: 500px; }
-  #gymlib .gymlib__banner {
-    background-color: rgba(216, 216, 216, 0.15);
-    padding-top: 30px;
-    padding-bottom: 32px; }
   #gymlib .gymlib__banner__title {
     font-family: 'Montserrat-Bold';
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 24px;
     line-height: 1.5rem;
-    color: #0F1E34; }
+    color: #0F1E34;
+    max-width: 1050px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto 6px auto; }
 
 /* Mobile */
 @media (min-width: 1800px) {
   #navbar .navbar__menu .navbar__item:last-child {
     margin-left: 435px; }
+  #fizix .fizix__banner__item {
+    width: 420px; }
   #programme-digital .programme-digital__item {
     -webkit-justify-content: space-around;
     -moz-justify-content: space-around;
