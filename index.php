@@ -116,8 +116,3 @@ require_once('inc/nav.php');
 <?php require_once('inc/contact.php'); ?>
 <?php require_once('inc/form.php'); ?>
 <?php require_once('inc/footer.php'); ?>
-<script src="assets/js/navbar.min.js"></script>
-<script src="assets/js/form.min.js"></script>
-<!--<script src="https://player.vimeo.com/api/player.js"></script>-->
-</body>
-</html>

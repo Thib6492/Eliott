@@ -7,6 +7,18 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 	box-shadow: none;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
 #form {
 	display: none;
 	margin: 70px auto 0 auto;
@@ -47,6 +59,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 		@include flex-direction(column);
 		margin-bottom: 40px;
 		width: 100%;
+		//height: 120px;
 		&--postCode {
 			width: 21%;
 		}
@@ -56,7 +69,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 		&--lastName, &--firstName, &--email, &--tel {
 			width: 48%;
 		}
-		&--firstName, &--tel, &--city {
+		&--lastName, &--tel, &--city {
 			margin-left: 4%;
 		}
 	}
@@ -77,5 +90,17 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 	.form__obli {
 		margin-top: -20px;
 		margin-bottom: 40px;
+	}
+	
+	.message__error {
+		color: #F8AC78;
+		//margin-top: -20px;
+		//padding-top: 20px;
+	}
+	
+	#message__success {
+		font-family: 'Montserrat-SemiBold';
+		@include fontSize(25,30);
+		text-align: center;
 	}
 }
