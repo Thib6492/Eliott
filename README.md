@@ -1,2 +1,2 @@
-# eliott
+# Eliott
 Site vitrine d'eliott
